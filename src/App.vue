@@ -2,12 +2,17 @@
   <div id="app">
     <img src="./assets/logo.png">
     <router-view/>
+    <uploader></uploader>
   </div>
 </template>
 
 <script>
+import Uploader from '@/components/Uploader.vue'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Uploader
+  }
 }
 </script>
 
